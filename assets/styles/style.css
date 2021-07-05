@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+}
+
+.header {
+  position: fixed;
+  height: 46px;
+  width: 100vw;
+  background-color: black;
+  z-index: 1;
+}
+
+.nav li {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  line-height: 46px;
+  padding: 0px 5.264vw;
+}
+.nav li:hover {
+  background-color: grey;
+}
+.modal-edit-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  overflow: auto;
+}
+
+.modal-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+.modal-edit {
+  width: 60%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  left: 0;
+}
+
+.modal-create-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  overflow: auto;
+}
+
+.modal-create {
+  width: 60%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  left: 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  font-size: 17px;
+}
+
+textarea {
+  width: 100%;
+  height: 500px;
+  font-size: 17px;
+}
+h1 {
+  padding-bottom: 10px;
+  padding-left: 0;
+  border-bottom: 1px solid rgb(168, 166, 166);
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  align-self: center;
+  margin: 10px;
+}
+
+.suabai {
+  background-color: #2e76cf;
+}
+.suabai:hover {
+  background-color: #2969b8;
+}
+.xoabai {
+  background-color: rgb(220, 0, 0);
+}
+.xoabai:hover {
+  background-color: rgb(190, 0, 0);
+}
+.vietbai {
+  background-color: rgb(0, 200, 0);
+}
+.vietbai:hover {
+  background-color: rgb(0, 170, 0) !important;
+}
+.bai {
+  width: 50vw;
+  height: 170px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.nut {
+  order: 3;
+}
+
+.noidung {
+  order: 2;
+  padding: 10px;
+}
+
+.img {
+  order: 1;
+}
+
+.tieude_bai {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.tieude_bai:hover {
+  color: #971928;
+  cursor: pointer;
+}
+
+.chuyenmuc_bai {
+  color: #971928;
+  font-size: 8;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.noidung_bai {
+  font-size: 13;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+img {
+  border-radius: 5px;
+  width: 260px;
+}
+
+.dem {
+  margin-bottom: 50px;
+}

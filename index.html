@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav">
+        <li class="tentrang">Cappr0vjp</li>
+        <li>Thế giới</li>
+        <li>Thời sự</li>
+        <li>Chính trị</li>
+        <li>Kinh doanh</li>
+        <li class="vietbai" onclick="thembai()">Viết bài</li>
+      </ul>
+    </div>
+    <br />
+    <div class="dem"></div>
+    <div class="modal-create-bg">
+      <div class="modal-create">
+        <h1>Tạo bài mới</h1>
+        <br />
+        <span>Tiêu đề</span> <br />
+        <input type="text" class="vietbai_tieude" /><br />
+        <span>Tóm tắt nội dung</span> <br />
+        <textarea class="vietbai_noidung" wrap="soft"></textarea> <br />
+        <span>Link ảnh</span> <br />
+        <input type="text" class="vietbai_linkanh" /><br />
+        <span>Chuyên mục</span> <br />
+        <input type="text" class="vietbai_chuyenmuc" /><br />
+        <button onclick="vietbai()">Đăng bài</button>
+      </div>
+    </div>
+    <div class="modal-edit-bg">
+      <div class="modal-edit">
+        <h1>Chỉnh sửa bài</h1>
+        <br />
+        <span>Tiêu đề</span> <br />
+        <input type="text" class="suabai_tieude" /><br />
+        <span>Tóm tắt nội dung</span> <br />
+        <textarea class="suabai_noidung" wrap="soft"></textarea> <br />
+        <span>Link ảnh</span> <br />
+        <input type="text" class="suabai_linkanh" /><br />
+        <span>Chuyên mục</span> <br />
+        <input type="text" class="suabai_chuyenmuc" /><br />
+        <button onclick="capnhat()">Cập nhật</button>
+      </div>
+    </div>
+    <div class="bai 1">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(1)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(1)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2020/12/10/09/so-ca-mac-moi-va-tu-vong-do-covid-19-tang-manh-tren-toan-cau-1-240x160.jpg"
+          class="linkanh_bai 1"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 1">
+          Số ca tử vong do Covid-19 ở Nga cao vút, ông Biden lo ngại biến thể
+          Delta
+        </p>
+        <p class="chuyenmuc_bai 1">THẾ GIỚI</p>
+        <p class="noidung_bai 1">
+          Tổng thống Mỹ Joe Biden cảnh báo biến thể Delta của virus corona có
+          thể làm gia tăng số ca nhiễm ở những người chưa được tiêm vắc xin
+          Covid-19 trong nước.
+        </p>
+      </div>
+    </div>
+
+    <div class="bai 2">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(2)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(2)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2021/07/04/05/https-cdn-cnn-com-cnnnext-dam-assets-210703070730-gulf-of-mexico-fire-pemex-07-02-2021-240x160.jpg"
+          class="linkanh_bai 2"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 2">
+          Cháy đường ống khí đốt bị rò rỉ, vùng biển bỗng chốc hóa thành 'mắt
+          lửa'
+        </p>
+        <p class="chuyenmuc_bai 2">THẾ GIỚI ĐÓ ĐÂY</p>
+        <p class="noidung_bai 2">
+          Một vụ hỏa hoạn xuất phát từ sự cố rò rỉ ống dẫn khí đốt dưới lòng
+          biển đã tạo nên một 'con mắt lửa' khổng lồ ngay giữa Vịnh Mexico.
+        </p>
+      </div>
+    </div>
+
+    <div class="bai 3">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(3)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(3)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2021/07/03/15/chuoi-khung-hoang-keo-dai-trong-van-tai-bien-quoc-te-1-240x160.jpg"
+          class="linkanh_bai 3"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 3">
+          Hàng loạt cú sốc liên tiếp, vận tải biển quốc tế lao đao
+        </p>
+        <p class="chuyenmuc_bai 3">BÌNH LUẬN QUỐC TẾ</p>
+        <p class="noidung_bai 3">
+          Các cú sốc nối tiếp nhau đang phủ bóng lên ngành vận tải biển quốc tế,
+          với nguồn cung container hạn hẹp, cước vận chuyển tăng cao và có khả
+          năng gây gián đoạn chuỗi cung ứng toàn cầu.
+        </p>
+      </div>
+    </div>
+
+    <div class="bai 4">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(4)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(4)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2021/07/03/04/than-nhien-ngoi-an-canh-ga-giua-luc-dang-bi-cuop-240x160.jpg"
+          class="linkanh_bai 4"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 4">
+          Mải mê ăn cánh gà bất chấp kẻ cướp chĩa súng sau lưng
+        </p>
+        <p class="chuyenmuc_bai 4">THẾ GIỚI ĐÓ ĐÂY</p>
+        <p class="noidung_bai 4">
+          Máy quay an ninh đã ghi được cảnh tượng gây sửng sốt khi một người đàn
+          ông vẫn thản nhiên ngồi ăn trong quán khi bị tên cướp mang súng tấn
+          công.
+        </p>
+      </div>
+    </div>
+
+    <div class="bai 5">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(5)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(5)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2021/07/05/06/my-latin-canh-bao-bien-the-covid-19-nguy-hiem-hon-lao-gia-han-phong-toa-lan-5-240x160.jpg"
+          class="linkanh_bai 5"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 5">
+          Mỹ Latinh cảnh báo biến thể Covid-19 nguy hiểm hơn, Lào gia hạn phong
+          tỏa lần 5
+        </p>
+        <p class="chuyenmuc_bai 5">THẾ GIỚI</p>
+        <p class="noidung_bai 5">
+          Một biến thể mới của virus SARS-CoV-2, được phát hiện đầu tiên tại
+          Peru đang khiến các chuyên gia y tế ở khu vực Mỹ Latinh vô cùng lo
+          lắng vì những đột biến bất thường của nó.
+        </p>
+      </div>
+    </div>
+
+    <div class="bai 6">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(6)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(6)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2021/07/05/07/so-tu-vong-vi-roi-may-bay-philippines-tang-vai-linh-thoat-chet-nho-nhay-du-2-240x160.jpg"
+          class="linkanh_bai 6"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 6">
+          Số tử vong vì rơi máy bay Philippines tăng, nhiều lính thoát chết nhờ
+          nhảy dù
+        </p>
+        <p class="chuyenmuc_bai 6">THẾ GIỚI</p>
+        <p class="noidung_bai 6">
+          Lãnh đạo quân đội Philippines cho biết, tổng số người thiệt mạng vì vụ
+          rơi máy bay không quân ở một hòn đảo miền nam nước này đã tăng lên đến
+          47 người, trong đó có 3 dân thường dưới mặt đất.
+        </p>
+      </div>
+    </div>
+
+    <div class="bai 7">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(7)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(7)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2021/07/05/10/dan-khoan-khi-tu-nhien-ngoai-khoi-azerbaijan-bi-nghi-phat-no-240x160.jpg"
+          class="linkanh_bai 7"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 7">
+          Video dàn khoan nghi phát nổ ngoài khơi Azerbaijan
+        </p>
+        <p class="chuyenmuc_bai 7">THẾ GIỚI ĐÓ ĐÂY</p>
+        <p class="noidung_bai 7">
+          Một vụ nổ đã tạo ra cột lửa lớn cháy ngoài khơi Azerbaijan thuộc biển
+          Caspian hôm 4/7. Các video được đăng tải trên mạng xã hội Twitter cho
+          thấy, một quả cầu lửa lớn bốc lên từ vùng biển ngoài khơi Azerbaijan
+          đã cháy rực một góc trời.
+        </p>
+      </div>
+    </div>
+
+    <div class="bai 8">
+      <div class="nut">
+        <button class="suabai" onclick="suabai(8)">Sửa bài</button>
+        <button class="xoabai" onclick="xoabai(8)">Xóa bài</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2021/07/05/09/thu-tuong-anh-khuyen-nguoi-dan-hoc-cach-song-chung-voi-virus-corona-240x160.jpg"
+          class="linkanh_bai 8"
+        />
+      </div>
+      <div class="noidung">
+        <p class="tieude_bai 8">
+          Thủ tướng Anh khuyên người dân 'học cách sống chung' với virus corona
+        </p>
+        <p class="chuyenmuc_bai 8">THẾ GIỚI</p>
+        <p class="noidung_bai 8">
+          Thủ tướng Anh Boris Johnson trong hôm 5/7 sẽ công bố kế hoạch dỡ bỏ
+          một số biện pháp hạn chế để phòng chống dịch Covid-19, đồng thời kêu
+          gọi người dân 'học cách sống chung' với virus corona.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/scripts/jquery.js"></script>
+  <script src="./assets/scripts/script.js"></script>
+</html>
