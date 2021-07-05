@@ -23,7 +23,7 @@ function vietbai() {
   `;
 
   id++;
-  $("body").prepend(vietbai_chen);
+  $("body").append(vietbai_chen);
   $(".vietbai_tieude").val("");
   $(".vietbai_noidung").val("");
   $(".vietbai_linkanh").val("");
